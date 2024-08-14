@@ -8,8 +8,8 @@ const Navbar = () => {
         <img src={taskyLogo} alt="Tasky Logo" className='ml-4' />
         </div>
      <ul className="flex gap-8 mx-9">
-        <li>Home</li>
-        <li>About</li>
+        <li className='cursor-pointer hover:font-bold  transition-all'>Home</li>
+        <li className='cursor-pointer hover:font-bold transition-all'>Your Tasks</li>
      </ul>
     </nav>
   )
