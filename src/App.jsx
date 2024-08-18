@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import { v4 as uuidv4 } from "uuid";
+import edit from "./assets/edit.png"
 
 function App() {
   const [todo, setTodo] = useState("");
@@ -113,7 +114,7 @@ function App() {
                     onClick={(e) => handleEdit(e, item.id)}
                     className="font-bold bg-violet-600 hover:bg-violet-900 p-2 py-0.5 text-white rounded-lg mx-2 "
                     >
-                    Edit
+                   <img src="{edit}" alt="Edit" />
                   </button>
                   <button
                     onClick={(e) => {
